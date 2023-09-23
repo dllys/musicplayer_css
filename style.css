@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #FBFCEB;
+}
+
+#wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main1, .main2 {
+    background-color: #fff;
+    width: 400px;
+    height: 800px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px #DDD;
+    padding: 50px 30px;
+}
+
+.main1 {
+    margin-right: 200px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.main1-content .main1-content__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.main1-content .main1-content__artist {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url("https://media.gq.com/photos/5a625821df8e105e64e8df4b/1:1/w_3052,h_3052,c_limit/Khalid_Shot_01-edit.jpg");
+    background-size: cover;
+    margin-bottom: 30px;
+    transition: 0.8s;
+}
+
+.main1-content .main1-content__artist:hover {
+    transform: scale(1.1);
+}
+
+.main1-content .main1-content__art-name {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.main1-content .main1-content__genre {
+    color: #999;
+    font-size: 14px;
+}
+
+.main1-content .main1-content__btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.main1-content .main1-content__btn span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 45px;
+    border-radius: 30px;
+    font-size: 16px;
+    box-shadow: 0 0 20px #DDD;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.main1-content .main1-content__btn span i {
+    transition: 0.5s;
+}
+
+.main1-content .main1-content__btn span:hover {
+    transform: scale(1.1);
+}
+
+.main1-content .main1-content__btn span:hover i {
+    color: #F46D82;
+}
+
+.main1-content .main1-content__btn span:first-child {
+    margin-right: 15px;
+    background-color: #000;
+    color: #fff;
+}
+.main1-content .main1-content__btn span > i {
+    margin-right: 5px;
+}
+
+.main1-content .main1-content__play-list ul {
+    display: flex;
+    flex-direction: column;
+} 
+
+.main1-content .main1-content__music {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    transition: 0.8s;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.main1-content .main1-content__music:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #DDD;
+}
+
+.main1-content .main1-content__album {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.main1-content .album1 {
+    background-image: url("https://i.scdn.co/image/ab67616d0000b273988ede5e1276e758b5f9e577");
+}
+
+.main1-content .album2 {
+    background-image: url("https://i.namu.wiki/i/OZtecMmNZTA4fc2OpOdLEkI0Ie3oiXEYbTbv6uAjoytstQRvz3W_lSwWI0po0Fcye0SAIlXw26BzfsUuO56N9A.webp");
+    position: relative;
+}
+
+.main1-content .album2 .on {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.main1-content .album3 {
+    background-image: url("https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/104/747/81104747_1569821428178_1_600x600.JPG");
+}
+
+.main1-content .album4 {
+    background-image: url("https://i1.sndcdn.com/artworks-4SRtuv55oqKV-0-t500x500.jpg");
+}
+
+.main1-content .main1-content__song {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main1-content .main1-content__name {
+    font-size: 14px;
+    color: #999;
+    font-weight: 600;
+}
+
+.main1-content .main1-content__title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main1-content .main1-content__more-info {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: #999;
+}
+
+.main1-content .main1-content__playing {
+    width: 100%;
+    height: 70px;
+    border-radius: 50px;
+    background-color: #000;
+    box-shadow: 0 0 20px #999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.main1-content .main1-content__music-name {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.main1-content .main1-content__music-title {
+    font-size: 18px;
+    color: #fff;
+}
+
+.main1-content .main1-content__music-bar {
+    color: #fff;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+}
+
+.main1-content .main1-content__music-bar i:nth-child(2) {
+    margin: 0 30px;
+    font-size: 28px;
+}
+/* // main 1 */
+
+
+.main2-content .main2-content__current-album {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0 50px 0;
+}
+
+.main2-content .main2-content__album {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #999;
+    background-image: url("https://i.namu.wiki/i/OZtecMmNZTA4fc2OpOdLEkI0Ie3oiXEYbTbv6uAjoytstQRvz3W_lSwWI0po0Fcye0SAIlXw26BzfsUuO56N9A.webp");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.main2-content .main2-content__music {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main2-content .main2-content__title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.main2-content .main2-content__name {
+    color: #999;
+    font-weight: 600;
+}
+
+.main2-content .main2-content__play-bar {
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+.main2-content .main2-content__time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.main2-content .main2-content__running {
+    width: 100%;
+    height: 5px;
+    border-radius: 30px;
+    background-color: #ddd;
+    position: relative;
+}
+
+.main2-content .main2-content__pass {
+    position: absolute;
+    left: 0; top: 0;
+    width: 60%;
+    height: 5px;
+    border-radius: 30px;
+    background-color: #000;
+}
+
+.main2-content .main2-content__pass::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    right: 0; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main2-content .main2-content__icon {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main2-content .main2-content__icon li:first-child,
+.main2-content .main2-content__icon li:last-child {
+    font-size: 18px;
+    color : #999
+}
+
+.main2-content .main2-content__icon li:nth-child(2),
+.main2-content .main2-content__icon li:nth-child(4) {
+    font-size: 28px;
+}
+
+.main2-content .main2-content__icon li:nth-child(3) {
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* // main 2 */
